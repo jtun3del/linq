@@ -187,8 +187,8 @@ Console.Clear();
 //   Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
 // }
 
- Console.WriteLine($"it is {marios.Count(c => !c.Species.Contains("Human") && !c.Species.Contains("Koopa"))}");
+//  Console.WriteLine($"it is {marios.Count(c => !c.Species.Contains("Human") && !c.Species.Contains("Koopa"))}");
 
-// foreach(var obj in marios.Where(c => c.Species.Contains("koopa"))){
-//   Console.WriteLine($"{obj.Name}");
-// }d
+foreach(var obj in marios.Where($"it is {marios.Count(c => !c.Species.Contains("Human") && !c.Species.Contains("Koopa")")})){
+  Console.WriteLine($"{obj.Name}");
+}
