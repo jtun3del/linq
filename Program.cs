@@ -111,15 +111,22 @@ Console.Clear();
 
 
 
-var oldchars = from Character ninty in characters
+// var oldchars = from Character ninty in characters
+// where ninty.YearCreated == 1981
+// select ninty;
+
+// foreach(Character ninty in oldchars){
+//   Console.Write(ninty.Name + " series: ");
+//   var serieses = ninty.Series;
+//   foreach(String serie in serieses) {
+//     Console.Write(serie + ", ");
+//   }
+//   Console.WriteLine("");
+// }
+
+var oldcmarios = from Character ninty in marios
 where ninty.YearCreated == 1981
 select ninty;
 
-foreach(Character ninty in oldchars){
-  Console.Write(ninty.Name + " series: ");
-  var serieses = ninty.Series;
-  foreach(String serie in serieses) {
-    Console.Write(serie + ", ");
-  }
-  Console.WriteLine("");
-}
+foreach(Character ninty in oldcmarios)
+  Console.Write(ninty.Display() + " ");
