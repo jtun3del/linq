@@ -107,4 +107,4 @@ where ninty.YearCreated == 1981
 select ninty;
 
 foreach(Character ninty in oldchars)
-  Console.Write(ninty.Name + " ");
+  Console.Write(ninty.Display() + " ");
