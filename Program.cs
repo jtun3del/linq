@@ -145,5 +145,9 @@ var noalias = from Character ninty in characters
 where ninty.Alias.Count == 0
 select ninty;
 
-foreach(Character ninty in noalias)
-  Console.Write(ninty.Display()  + " ");
+int x = 0;
+ foreach(Character ninty in noalias){
+  x += 1;
+ }
+
+Console.Write(x);
