@@ -187,8 +187,8 @@ Console.Clear();
 //   Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
 // }
 
-// Console.WriteLine($"it is {dks.Count(c => c.Species.Contains("Kremling"))}");
+ Console.WriteLine($"it is {marios.Count(c => c.Species.Contains("Human"))}");
 
-foreach(var obj in dks.Where(c => c.Species.Contains("Kremling"))){
-  Console.WriteLine($"{obj.Name}");
-}
+// foreach(var obj in dks.Where(c => c.Species.Contains("Kremling"))){
+//   Console.WriteLine($"{obj.Name}");
+// }
