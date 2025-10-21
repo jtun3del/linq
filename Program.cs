@@ -141,13 +141,26 @@ Console.Clear();
 
 
 
+// var noalias = from Character ninty in characters
+// where ninty.Alias.Count == 0
+// select ninty;
+
+// int x = 0;
+//  foreach(Character ninty in noalias){
+//   x += 1;
+//  }
+
+// Console.Write(x);
+
+
 var noalias = from Character ninty in characters
 where ninty.Alias.Count == 0
 select ninty;
 
-int x = 0;
- foreach(Character ninty in noalias){
-  x += 1;
- }
-
-Console.Write(x);
+foreach(Character ninty in noalias){
+  Console.WriteLine(ninty.Name  + " ");
+  Console.Write("alias: ");
+  foreach(var i in ninty.Alias){ Console.Write(i + ", ");}
+  Console.Write("series: ");
+  foreach(var i in ninty.Series){ Console.Write(i + ", ");}
+}
