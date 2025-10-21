@@ -191,4 +191,4 @@ Console.Clear();
 
 // foreach(var obj in marios.Where(c => c.Species.Contains("koopa"))){
 //   Console.WriteLine($"{obj.Name}");
-// }
+// }d
