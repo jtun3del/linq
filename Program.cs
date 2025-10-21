@@ -165,8 +165,5 @@ Console.Clear();
 //   foreach(var i in ninty.Series){ Console.Write(i + ", ");}
 // }
 
-var noalias = from Character ninty in marios
-where ninty.Alias.Count == 0
-select ninty;
 
-Console.WriteLine(noalias.Any());
+Console.WriteLine($"How many? {marios.Count(c => c.Alias.Count == 0)}");
