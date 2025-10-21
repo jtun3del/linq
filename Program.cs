@@ -189,6 +189,6 @@ Console.Clear();
 
 //  Console.WriteLine($"it is {marios.Count(c => !c.Species.Contains("Human") && !c.Species.Contains("Koopa"))}");
 
-foreach(var obj in marios.Where($"it is {marios.Count(c => !c.Species.Contains("Human") && !c.Species.Contains("Koopa")")})){
+foreach(var obj in marios.Where($"it is {dks.Count(c => !c.Species.Contains("Human") && !c.Species.Contains("Koopa")")})){
   Console.WriteLine($"{obj.Name}");
 }
