@@ -102,9 +102,24 @@ Console.Clear();
   //}
 //}
 
+// var oldchars = from Character ninty in characters
+// where ninty.YearCreated == 1981
+// select ninty;
+
+// foreach(Character ninty in oldchars)
+//   Console.Write(ninty.Display() + " ");
+
+
+
 var oldchars = from Character ninty in characters
 where ninty.YearCreated == 1981
 select ninty;
 
-foreach(Character ninty in oldchars)
-  Console.Write(ninty.Display() + " ");
+foreach(Character ninty in oldchars){
+  Console.Write(ninty.Name + " series: ");
+  var serieses = ninty.Series;
+  foreach(String serie in serieses) {
+    Console.Write(serie + ", ");
+  }
+  Console.WriteLine("");
+}
