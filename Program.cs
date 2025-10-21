@@ -181,4 +181,8 @@ Console.Clear();
 //   Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
 // }
 
-Console.WriteLine($"it is {dks.Any(c => c.Alias.Contains("Snowmad King"))}");
+// Console.WriteLine($"it is {dks.Any)}");
+
+foreach(var obj in dks.Where(c => c.Alias.Contains("Snowmad King"))){
+  Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
+}
