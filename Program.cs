@@ -169,6 +169,8 @@ Console.Clear();
 // Console.WriteLine($"How many? {marios.Count}");
 
 
-foreach(var obj in characters.Where(c => c.Alias.Count == 0)){
-  Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
-}
+// foreach(var obj in characters.Where(c => c.Alias.Count == 0)){
+//   Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
+// }
+
+Console.WriteLine($"it is {dks.Any(c => c.Alias.Count == 0)}");
