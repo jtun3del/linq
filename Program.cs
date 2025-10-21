@@ -124,9 +124,9 @@ Console.Clear();
 //   Console.WriteLine("");
 // }
 
-var oldcmarios = from Character ninty in marios
+var olddks = from Character ninty in dks
 where ninty.YearCreated == 1981
 select ninty;
 
-foreach(Character ninty in oldcmarios)
-  Console.Write(ninty.Name + " ");
+foreach(Character ninty in olddks)
+  Console.Write(ninty.Display() + " ");
