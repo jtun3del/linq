@@ -137,4 +137,4 @@ where ninty.FirstAppearance == "Donkey Kong 64"
 select ninty;
 
 foreach(Character ninty in from64)
-  Console.Write(ninty.Display()  + " ");
+  Console.Write(ninty.Name  + " ");
