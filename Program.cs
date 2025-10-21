@@ -93,11 +93,18 @@ Console.Clear();
 // }
 
 // all characters grouped by year created
-var CharactersByYearCreated = characters.GroupBy(c => c.YearCreated);
-foreach(var characterByYearCreated in CharactersByYearCreated)
-{
-  Console.WriteLine(characterByYearCreated.Key);
-  foreach(var character in characterByYearCreated) {
-    Console.WriteLine($"\t{character.Name}");
-  }
-}
+//var CharactersByYearCreated = characters.GroupBy(c => c.YearCreated);
+//foreach(var characterByYearCreated in CharactersByYearCreated)
+//{
+//  Console.WriteLine(characterByYearCreated.Key);
+//  foreach(var character in characterByYearCreated) {
+  //  Console.WriteLine($"\t{character.Name}");
+  //}
+//}
+
+var oldchars = from Character ninty in characters
+where ninty.YearCreated == 1981
+select ninty;
+
+foreach(Character ninty in oldchars)
+  Console.Write(ninty.Name + " ");
