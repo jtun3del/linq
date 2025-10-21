@@ -173,4 +173,6 @@ Console.Clear();
 //   Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
 // }
 
-Console.WriteLine($"it is {dks.Any(c => c.Alias.Count == 0)}");
+// Console.WriteLine($"it is {dks.Any(c => c.Alias.Count == 0)}");
+
+Console.WriteLine($"there are {dks.Count(c => c.Alias.Count == 0)}");
