@@ -177,6 +177,8 @@ Console.Clear();
 
 // Console.WriteLine($"there are {dks.Count(c => c.Alias.Count == 0)}");
 
-foreach(var obj in dks.Where(c => c.Alias.Count == 0)){
-  Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
-}
+// foreach(var obj in dks.Where(c => c.Alias.Count == 0)){
+//   Console.WriteLine($"{obj.Name}, alias(s):\n\t{String.Join(", ", obj.Alias)} ");
+// }
+
+Console.WriteLine($"it is {dks.Any(c => c.Alias.Contains("Snowmad King"))}");
