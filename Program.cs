@@ -124,9 +124,17 @@ Console.Clear();
 //   Console.WriteLine("");
 // }
 
-var olddks = from Character ninty in dks
-where ninty.YearCreated == 1981
+// var olddks = from Character ninty in dks
+// where ninty.YearCreated == 1981
+// select ninty;
+
+// foreach(Character ninty in olddks)
+//   Console.Write(ninty.Name  + " ");
+
+
+var from64 = from Character ninty in dks
+where ninty.FirstAppearance == "Donkey Kong 64"
 select ninty;
 
-foreach(Character ninty in olddks)
-  Console.Write(ninty.Name  + " ");
+foreach(Character ninty in from64)
+  Console.Write(ninty.Display()  + " ");
