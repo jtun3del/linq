@@ -132,9 +132,18 @@ Console.Clear();
 //   Console.Write(ninty.Name  + " ");
 
 
-var from64 = from Character ninty in dks
-where ninty.FirstAppearance == "Donkey Kong 64"
+// var from64 = from Character ninty in dks
+// where ninty.FirstAppearance == "Donkey Kong 64"
+// select ninty;
+
+// foreach(Character ninty in from64)
+//   Console.Write(ninty.Name  + " ");
+
+
+
+var noalias = from Character ninty in characters
+where ninty.Alias.Count == 0
 select ninty;
 
-foreach(Character ninty in from64)
-  Console.Write(ninty.Name  + " ");
+foreach(Character ninty in noalias)
+  Console.Write(ninty.Display()  + " ");
